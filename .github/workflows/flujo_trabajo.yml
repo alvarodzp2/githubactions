@@ -13,7 +13,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Use Personal Access Token
-        # Ejecuta el comando curl para realizar una llamada a la API de GitHub.
         run: |
           curl -H "Authorization: Bearer ${{ secrets.PATH_SECRET }}" \
                -H "Accept: application/vnd.github.v3+json" \
